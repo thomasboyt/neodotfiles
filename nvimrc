@@ -8,7 +8,8 @@ Plug 'bling/vim-airline'
 Plug 'embear/vim-localvimrc'
 
 " Plug 'scrooloose/syntastic'
-Plug 'benekastah/neomake'
+" Plug 'benekastah/neomake'
+Plug 'thomasboyt/neomake', { 'branch': 'revert-ft-change' }
 
 Plug 'mileszs/ack.vim'
 Plug 'christoomey/vim-tmux-navigator'
@@ -155,8 +156,10 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 
 " Neomake conf
-autocmd! BufWritePost * Neomake
+" --------------------
 let g:neomake_javascript_enabled_makers = ['eslint']
+
+autocmd! BufWritePost * Neomake
 
 
 " Prose mode
