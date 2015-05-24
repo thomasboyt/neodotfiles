@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'embear/vim-localvimrc'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Plug 'scrooloose/syntastic'
 " Plug 'benekastah/neomake'
@@ -48,6 +49,7 @@ set incsearch
 
 set showcmd
 set wrap
+set number
 
 set autoread
 
@@ -64,8 +66,6 @@ set undodir=~/.nvim/undofile/
 set wildignore=log/**,node_modules/**,tmp/**
 set completeopt=menu,preview
 set ignorecase
-
-au BufReadPost * set relativenumber
 
 set cursorline
 set scrolloff=3  " always have 3 lines showing above/below scroll pos
