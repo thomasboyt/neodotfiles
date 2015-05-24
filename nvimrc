@@ -9,8 +9,7 @@ Plug 'embear/vim-localvimrc'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Plug 'scrooloose/syntastic'
-" Plug 'benekastah/neomake'
-Plug 'thomasboyt/neomake', { 'branch': 'revert-ft-change' }
+Plug 'benekastah/neomake'
 
 Plug 'mileszs/ack.vim'
 Plug 'christoomey/vim-tmux-navigator'
