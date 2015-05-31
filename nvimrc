@@ -69,6 +69,8 @@ set ignorecase
 set cursorline
 set scrolloff=3  " always have 3 lines showing above/below scroll pos
 
+set laststatus=2  " always show status bar
+
 set backupdir=~/.vim/_backup//    " where to put backup files.
 set directory=~/.vim/_temp//      " where to put swap files.
 
