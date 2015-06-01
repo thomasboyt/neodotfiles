@@ -137,7 +137,7 @@ let NERDTreeChDirMode=0
 let NERDTreeQuitOnOpen=0
 let NERDTreeMouseMode=2
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git$','\.hg','\.svn','\.bzr', '\.DS_Store']
+let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git$','\.hg','\.svn','\.bzr', '\.DS_Store', '__pycache__']
 let NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
