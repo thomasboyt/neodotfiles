@@ -59,7 +59,7 @@ set autoindent
 
 " remember undo history
 set undofile
-set undodir=~/.nvim/undofile/
+set undodir=~/.nvim/_undofile/
 
 " wildcard search ignore
 set wildignore=log/**,node_modules/**,tmp/**
@@ -71,8 +71,8 @@ set scrolloff=3  " always have 3 lines showing above/below scroll pos
 
 set laststatus=2  " always show status bar
 
-set backupdir=~/.vim/_backup//    " where to put backup files.
-set directory=~/.vim/_temp//      " where to put swap files.
+set backupdir=~/.nvim/_backup//    " where to put backup files.
+set directory=~/.nvim/_temp//      " where to put swap files.
 
 " j/k move within line instead of skipping lines
 map j gj
