@@ -2,6 +2,11 @@ New dotfiles for a new Vim.
 
 Installation:
 
+* Install powerline shell to `~/powerline-shell`: https://github.com/milkbikis/powerline-shell
+* Get patched Monaco for Powerline from Dropbox
+* Install iTerm 2 Solarized: https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
+* Import and use Solarized and patched Monaco
+
 ```
 git clone git@github.com:thomasboyt/neodotfiles.git ~/neodotfiles
 ln -s ~/neodotfiles/nvimrc ~/.nvimrc
