@@ -11,7 +11,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 
-Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
@@ -107,19 +107,7 @@ nnoremap <silent> <C-e> :<C-u>call ToggleErrors()<CR>
 
 map <C-n> :NERDTreeToggle<CR>
 
-
-" Ack conf
-" --------------------
-
-" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-" Main advantage: respects .gitignore!
-" brew install the_silver_searcher
 if executable('ag')
-  let g:ackprg = 'ag --nogroup --column' " Use in Ack.vim
-
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""' " Use in CtrlP
 
   " bind K to grep word under cursor
