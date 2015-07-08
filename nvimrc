@@ -107,6 +107,10 @@ nnoremap <silent> <C-e> :<C-u>call ToggleErrors()<CR>
 
 map <C-n> :NERDTreeToggle<CR>
 
+
+" Use cwd for ctrlp root instead of seeking root git repo
+let g:ctrlp_working_path_mode = 0
+
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""' " Use in CtrlP
 
