@@ -137,20 +137,13 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 autocmd vimenter * if !argc() | NERDTree | endif
 
 
-" Syntastic conf
-" --------------------
-" let g:syntastic_always_populate_loc_list=0
-" let g:syntastic_auto_loc_list=0
-" let g:syntastic_enable_signs=1
-"
-" let syntastic_mode_map = { 'passive_filetypes': ['html', 'less'] }
-" let g:syntastic_python_checkers=['pyflakes']
-" let g:syntastic_javascript_checkers=['eslint']
-
-
 " Neomake conf
 " --------------------
+
+" npm install -g eslint
 let g:neomake_javascript_enabled_makers = ['eslint']
+" pip install flake8
+let g:neomake_python_enabled_makers = ['flake8']
 
 autocmd! BufWritePost * Neomake
 
