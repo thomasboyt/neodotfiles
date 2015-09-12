@@ -158,10 +158,12 @@ function! ToggleProseMode()
     let g:prosemode_active = 0
     Goyo
     NoPencil
+    setlocal nospell
   else
     let g:prosemode_active = 1
     Goyo 100
     SoftPencil
+    setlocal spell
   endif
 endfunction
 
