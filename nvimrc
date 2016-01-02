@@ -21,6 +21,7 @@ Plug 'muffs/wap-it'
 
 Plug 'groenewege/vim-less'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 Plug 'reedes/vim-pencil'
 Plug 'junegunn/goyo.vim'
@@ -175,3 +176,5 @@ nnoremap <leader>w :call ToggleProseMode()<cr>
 let g:airline_powerline_fonts = 1
 
 let g:slime_target = "tmux"
+
+let g:jsx_ext_required = 0
