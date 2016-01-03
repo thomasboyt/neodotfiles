@@ -1,6 +1,6 @@
 New dotfiles for a new Vim.
 
-Installation:
+## Installation
 
 * Install powerline shell to `~/powerline-shell`: https://github.com/milkbikis/powerline-shell
 * Get patched Monaco for Powerline from Dropbox
@@ -16,8 +16,20 @@ ln -s ~/neodotfiles/zshrc ~/.zshrc
 
 curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-Todos:
+### Plugin Installation
+
+In VIM:
+
+```
+:PlugInstall
+```
+
+In tmux: `C-a I`
+
+## Todos
 
 - Move language-specific conf out of `zshrc`
