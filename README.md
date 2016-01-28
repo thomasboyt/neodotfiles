@@ -30,6 +30,16 @@ In VIM:
 
 In tmux: `C-a I`
 
+### Karabiner
+
+* Download: https://pqrs.org/osx/karabiner/
+* Run `karabiner.sh`
+
+Keybindings:
+
+* Poker 3: escape rebound to backtick
+* All devices: Pressing L_Ctrl and nothing else acts as escape
+
 ## Todos
 
 - Move language-specific conf out of `zshrc`
