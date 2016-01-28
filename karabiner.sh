@@ -2,8 +2,7 @@
 
 cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
 
-private=~/Library/Application\ Support/Karabiner/private.xml
-cp karabiner_private.xml $private
+cp karabiner_private.xml ~/Library/Application\ Support/Karabiner/private.xml
 
 $cli reloadxml
 
