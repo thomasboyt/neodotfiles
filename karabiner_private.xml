@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>KPC</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>POKER_3</productname>
+    <productid>0x0141</productid>
+  </deviceproductdef>
+
+  <item>
+    <name>Poker 3: Escape to Backquote(`)</name>
+    <identifier>poker3.escape_backquote</identifier>
+    <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::BACKQUOTE</autogen>
+    <device_only>DeviceVendor::KPC, DeviceProduct::POKER_3</device_only>
+  </item>
+</root>
