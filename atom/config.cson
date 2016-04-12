@@ -1,0 +1,21 @@
+"*":
+  "atom-typescript": {}
+  core:
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+  editor:
+    fontFamily: "Monaco"
+    invisibles: {}
+    preferredLineLength: 100
+  "exception-reporting":
+    userId: "9d39d9f6-3060-d7ed-6e3b-23bf97709056"
+  linter: {}
+  metrics:
+    userId: "d789b74040fbdc42a4701393af89cd55e91540c1"
+  "release-notes":
+    viewedVersion: "0.60.0"
+  welcome:
+    showOnStartup: false
