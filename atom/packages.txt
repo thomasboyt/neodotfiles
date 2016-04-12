@@ -1,5 +1,7 @@
-atom-typescript@8.5.0
+atom-typescript@8.8.0
 ex-mode@0.8.0
 linter@1.11.4
+linter-eslint@7.2.0
+linter-flake8@1.13.0
 vim-mode@0.65.0
 
