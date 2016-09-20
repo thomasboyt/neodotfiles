@@ -79,58 +79,12 @@ export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Add ~/bin
+export PATH="$HOME/bin:$PATH"
 
-# Python
-# ---------------
-#source /usr/local/bin/virtualenvwrapper_lazy.sh
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:$PYTHONPATH"
+alias rm=trash
 
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
-# Ruby
-# ---------------
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source /Users/tboyt/.rvm/scripts/rvm
-
-
-# Go
-# ---------------
-export GOPATH="$HOME/Coding/go"
-export PATH="$HOME/Coding/go/bin:$PATH"
-
-
-
-# Postgres
-# ---------------
-export PGDATA="/usr/local/var/postgres"
-
-
-# OCaml
-# ---------------
-. /Users/tboyt/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-
-# Misc
-# ---------------
-
-# Use custom terminfo if exists
-[[ -f "~/.$TERM.ti" ]] && tic ~/.$TERM.ti
-
-alias vim='nvim'
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
-
-export DROPBOX_PATH="/Users/tboyt/Dropbox"
-
-fancygifify() {
-  if [[ -n "$1" ]]; then
-    if [[ $2 == '--good' ]]; then
-      ffmpeg -i $1 -r 10 -vcodec png out-static-%05d.png
-      time convert -verbose +dither -layers Optimize -resize 600x600\> out-static*.png  GIF:- | gifsicle --colors 128 --delay=5 --loop --optimize=3 --multifile - > $1.gif
-      rm out-static*.png
-    else
-      ffmpeg -i $1 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=6 > $1.gif
-    fi
-  else
-    echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
-  fi
-}
-
+source ~/.zshrc.local
