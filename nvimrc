@@ -5,6 +5,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'embear/vim-localvimrc'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
@@ -14,6 +15,7 @@ Plug 'benekastah/neomake'
 Plug 'rking/ag.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'altercation/vim-colors-solarized'
+Plug 'sickill/vim-monokai'
 Plug 'airblade/vim-gitgutter'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
@@ -26,6 +28,9 @@ Plug 'mxw/vim-jsx'
 Plug 'reedes/vim-pencil'
 Plug 'junegunn/goyo.vim'
 
+Plug 'elixir-lang/vim-elixir'
+Plug 'leafgarland/typescript-vim'
+
 call plug#end()
 
 filetype plugin indent on
@@ -36,8 +41,8 @@ syntax enable
 "---------------
 set t_Co=256
 set background=dark
-colorscheme solarized
-let g:airline_theme = 'solarized'
+colorscheme monokai
+let g:airline_theme = 'molokai'
 
 
 " Basic conf
@@ -145,6 +150,8 @@ autocmd vimenter * if !argc() | NERDTree | endif
 let g:neomake_javascript_enabled_makers = ['eslint']
 " pip install flake8
 let g:neomake_python_enabled_makers = ['flake8']
+
+let g:neomake_elixir_enabled_makers = []
 
 autocmd! BufWritePost * Neomake
 
