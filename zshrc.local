@@ -1,0 +1,48 @@
+# put local stuff here
+
+# Python
+# ---------------
+#source /usr/local/bin/virtualenvwrapper_lazy.sh
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:$PYTHONPATH"
+
+
+# Ruby
+# ---------------
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# source /Users/tboyt/.rvm/scripts/rvm
+
+
+# Go
+# ---------------
+export GOPATH="$HOME/Coding/go"
+export PATH="$HOME/Coding/go/bin:$PATH"
+
+
+
+# Postgres
+# ---------------
+export PGDATA="/usr/local/var/postgres"
+
+
+# OCaml
+# ---------------
+. /Users/tboyt/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# Android
+# ---------------
+export ANDROID_HOME="/Users/tboyt/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+
+
+# Misc
+# ---------------
+
+alias vim='nvim'
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
+export DROPBOX_PATH="/Users/tboyt/Dropbox"
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
