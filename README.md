@@ -20,6 +20,10 @@ curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+### prezto
+
+Before copying zshrc, install prezto as specified on https://github.com/sorin-ionescu/prezto. Then copy over zshrc, and add the `git` module to the modules in `zpreztorc`.
+
 ### Plugin Installation
 
 In VIM:
