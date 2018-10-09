@@ -44,6 +44,13 @@ Keybindings:
 * Poker 3: escape rebound to backtick
 * All devices: Pressing L_Ctrl and nothing else acts as escape
 
+### git setup
+
+```
+git config --global core.editor "vim"
+# etc...
+```
+
 ## Todos
 
 - Move language-specific conf out of `zshrc`
